@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #1a1a1a;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background-color: #000000;
+        border-radius: 8px;
+        padding: 30px;
+        width: 350px;
+      }
+      h2 {
+        color: #1884f1;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #fff;
+        text-align: center;
+      }
+      a {
+        color: #195cc7;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-top: 10px;
+        color: #1884f1;
+        margin-bottom: 10px;
+      }
+      input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: #d8d8d8;
+      }
+      .checkbox {
+        text-align: left;
+      }
+      button {
+        background-color: #235fc0;
+        color: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+      button:hover {
+        background-color: #2064a7;
+      }
+      .forgot {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Login</h2>
+      <p>
+        Don't have an account?
+        <a href="https./">Create an account</a>
+      </p>
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="" placeholder="Email" />
+        <label for="password">Password</label>
+        <input type="password" id="" placeholder="Password" />
+        <p class="checkbox"><input type="checkbox" /> Keep me signed in</p>
+        <button type="submit">Login</button>
+        <a href="https://" class="forgot">Forgot Password?</a>
+        <a href="https://" class="cantlogin">Can't Login?</a>
+      </form>
+    </div>
+  </body>
+</html>

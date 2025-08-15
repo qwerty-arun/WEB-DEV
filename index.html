@@ -3,71 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Article Page</title>
+    <title>Login Page Again</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        margin: 0;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        background-color: rgb(1, 9, 9);
+        padding: 30px;
+        border-radius: 8px;
+        width: 300px;
+      }
+      .login {
+        text-align: center;
+        color: aliceblue;
+        margin-bottom: 20px;
+      }
+      .dont {
+        color: rgb(144, 144, 158);
+      }
+      form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .email {
+        color: aliceblue;
+      }
+      .emailinput {
+        margin-top: 10px;
+        height: 20px;
+        width: 250px;
+      }
+      .password {
+        margin-top: 20px;
+        color: aliceblue;
+      }
+      .passwdinput {
+        margin-top: 10px;
+        width: 250px;
+        height: 20px;
+      }
+      .submit {
+        align-self: center;
+        margin-top: 20px;
+        width: 120px;
+        height: 30px;
+        background-color: rgb(213, 178, 108);
+        margin-bottom: 20px;
+      }
+      .forgot {
+        color: aquamarine;
+        margin-bottom: 15px;
+      }
+      .cantlogin {
+        color: aquamarine;
+      }
+    </style>
   </head>
-
   <body>
-    <header>
-      <h1>Build a Blog Article Page using HTML Semantics</h1>
-    </header>
-    <nav>
-      <a href="index.html">Home </a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <main>
-      <h2>Author: Arun</h2>
-
-      <hr />
-      <section>
-        <h3>Priority Inversion</h3>
-        <p>
-          Definition Priority inversion occurs when a high-priority process is
-          forced to wait for a low-priority process to release a resource, but
-          that low-priority process is delayed because medium-priority processes
-          keep running.This “inverts” the expected priority order — a
-          low-priority task indirectly blocks a high-priority one.
-        </p>
-      </section>
-      <hr />
-
-      <section>
-        <h3>Why Semantics Matter</h3>
-        <p>
-          Semantic HTML makes your code easier to read and improves
-          accessibility for screen readers.
-        </p>
-      </section>
-
-      <hr />
-      <section>
-        <h3>SEO Benefits</h3>
-        <p>
-          Search engines love well-structured pages because they understand your
-          content better.
-        </p>
-      </section>
-      <hr />
-
-      <section>
-        <h3>JS stuff</h3>
-        <code>console.log("hitesh")</code>
-      </section>
-      <hr />
-
-      <aside>
-        <h3>Related Links</h3>
-        <ul>
-          <li><a href="#">HTML5 Specification</a></li>
-          <li><a href="#">W3C Accessibility Guidelines</a></li>
-        </ul>
-      </aside>
-    </main>
-
-    <footer>
-      <h4>&copy; 2025 My Tech Blog. All rights reserved.</h4>
-    </footer>
+    <div class="card">
+      <h1 class="login">Login</h1>
+      <a href="https://" class="dont">Don't have an account?</a>
+      <form>
+        <label class="email">Email:</label>
+        <input class="emailinput" type="text" />
+        <label class="password">Password:</label>
+        <input class="passwdinput" type="password" />
+        <button class="submit" type="submit">Login</button>
+        <a class="forgot" href="htpps://">Forgot Password?</a>
+        <a class="cantlogin" href="htpps://">Can't Login?</a>
+      </form>
+    </div>
   </body>
 </html>

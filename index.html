@@ -3,83 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page Again</title>
+    <title>Navbar Project</title>
     <style>
       body {
         background-color: #1a1a1a;
+        color: rgb(158, 158, 255);
         margin: 0;
-        height: 100vh;
         padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div h2 {
+        margin: 10px;
+        padding: 10px;
+        font-size: x-larger;
+      }
+      .nav1 ul{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
       }
-      .card {
-        background-color: rgb(1, 9, 9);
-        padding: 30px;
-        border-radius: 8px;
-        width: 300px;
+      nav a{
+        color:aqua;
+        text-decoration: none;
+        position: relative;
       }
-      .login {
-        text-align: center;
-        color: aliceblue;
-        margin-bottom: 20px;
+      nav li{
+        list-style: none;
+        margin: 10px;
       }
-      .dont {
-        color: rgb(144, 144, 158);
-      }
-      form {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-      }
-      .email {
-        color: aliceblue;
-      }
-      .emailinput {
-        margin-top: 10px;
-        height: 20px;
-        width: 250px;
-      }
-      .password {
-        margin-top: 20px;
-        color: aliceblue;
-      }
-      .passwdinput {
-        margin-top: 10px;
-        width: 250px;
-        height: 20px;
-      }
-      .submit {
-        align-self: center;
-        margin-top: 20px;
-        width: 120px;
+      nav button{
+        background-color: rgb(215, 89, 48);
+        color:black;
+        width: 100px;
         height: 30px;
-        background-color: rgb(213, 178, 108);
-        margin-bottom: 20px;
       }
-      .forgot {
-        color: aquamarine;
-        margin-bottom: 15px;
-      }
-      .cantlogin {
-        color: aquamarine;
-      }
+              .nav1 a::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(254, 254, 254);
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav1 a:hover::after{
+            transform: scaleX(1);
+        }
+        .nav1 button:hover{
+            background-color: aliceblue;
+            color: orange;
+            cursor: pointer;
+        }
     </style>
   </head>
   <body>
-    <div class="card">
-      <h1 class="login">Login</h1>
-      <a href="https://" class="dont">Don't have an account?</a>
-      <form>
-        <label class="email">Email:</label>
-        <input class="emailinput" type="text" />
-        <label class="password">Password:</label>
-        <input class="passwdinput" type="password" />
-        <button class="submit" type="submit">Login</button>
-        <a class="forgot" href="htpps://">Forgot Password?</a>
-        <a class="cantlogin" href="htpps://">Can't Login?</a>
-      </form>
+    <div class="nav-container">
+      <h2>Variation 1: Horizontal with underline effect</h2>
+      <nav class="nav1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
     </div>
   </body>
 </html>

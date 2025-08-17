@@ -6,48 +6,41 @@
     <title>Navbar Project</title>
     <style>
       body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
         background-color: #1a1a1a;
         color: white;
-        padding: 0;
-        margin: 0;
-        font-family: Georgia, "Times New Roman", Times, serif;
       }
-
-      /* h2::before{
-        content: "::before";
-        color:red;
-      } */
-
       .nav-container {
-        margin: 20px;
+        margin-bottom: 40px;
+      }
+      h2{
+        margin-bottom: 20px;
       }
       .nav1 {
-        display: flex;
+        background-color: wheat;
+        width: 100vh;
+        border-radius: 5px;
+        padding: 10px;
+        position: relative;
       }
       .nav1 ul {
-        list-style-type: none;
-        margin: 0px;
+        list-style: none;
+        margin: 0;
         padding: 0;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+      }
+      .nav1 li {
+        display: inline;
       }
       .nav1 a {
         text-decoration: none;
-        margin: 10px;
-        color: rgb(180, 141, 216);
-      }
-      .nav1 a::after {
-        margin: 40px;
-      }
-
-      .nav1 .login-btn {
-        background-color: rgb(115, 115, 240);
-        border: none;
-        border-radius: 5px;
-        width: 100px;
-        height: 20px;
-        font-size: medium;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: black;
+        padding: 5px;
+        margin: 5px;
+        position: relative;
       }
     </style>
   </head>

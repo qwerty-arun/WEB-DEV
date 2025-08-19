@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown</title>
+  <style>
+
+    body{
+  background: linear-gradient(135deg, #8a2be2, #4169e1);
+    }
+
+    .subjects{
+      border: 1px white solid;
+      width: 150px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .subjects .dropdown{
+      display: none;
+    }
+    .subjects:hover .dropdown{
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="subjects">
+    <h1>Subjects</h1>
+    <div class="dropdown">
+      <ul>
+        <li>Maths</li>
+        <li>Physics</li>
+        <li>Chemistry</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Card 1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+      body {
+        background: linear-gradient(135deg, #8a2be2, #4169e1);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-family: "Borel", cursive;
+        color: rgb(144, 194, 238);
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        margin: 20px;
+        background-color: #1a1a1a;
+        width: 500px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+      }
+      .image-container {
+        margin: 20px;
+        border-radius: 20px;
+      }
+      .image-container img {
+        margin: 20px;
+        border-radius: 20px;
+        width: 400px;
+        height: 200px;
+      }
+      .btn-container {
+        display: flex;
+        margin: 20px;
+        margin-top: 25px;
+        justify-content: space-between;
+      }
+      .btns {
+        background-color: #444444;
+        border: 2px solid #a3a3a3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        width: 170px;
+        height: 50px;
+        border-radius: 10px;
+        transition: 0.2s ease-in-out;
+      }
+      .btns:hover {
+        background-color: #2b2b2b;
+      }
+      .btns:active {
+        background-color: black;
+      }
+      #cart-btn {
+        display: flex;
+        justify-content: space-around;
+      }
+      #cart-btn::before{
+        content:'🛒';
+      } 
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image-container">
+        <img
+          src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQAcYKRs0vZ03tPo_OxpO_HE-lzJ3AQPo1sGxVINOpHaSQh9W7ogNk9k_rnG4vfqosbNKRRKaz3exhAjYcF4OwrOSCLhcBiYi7o9MWi1teBHMlgz4Qe2aWr0g"
+        />
+      </div>
+      <div class="card-container">
+        <h3>Nike Men's Downshifter 13 Road Running Shoes</h3>
+        <h4>4077/-</h4>
+        <p>
+          The Nike Men's Downshifter 13 Road Running Shoes deliver cushioning,
+          durability, and a refreshed upper—perfect for beginners and seasoned
+          runners ready to chase their goals.
+        </p>
+      </div>
+    <div class="btn-container">
+      <button class="btns">Buy Now</button>
+      <button class="btns" id="cart-btn">
+        Add to Cart
+      </button>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shoe-Card-1</title>
+    <style>
+      html {
+        overflow: hidden;
+        overscroll-behavior: none;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(#392d69, #b57bee);
+        color: white;
+        overflow: hidden;
+        overscroll-behavior: none;
+      }
+      .card-container {
+        max-width: 400px;
+        width: 90%;
+        height: 650px;
+        background-color: #1a1a1a;
+        border-radius: 20px;
+      }
+      .img-container {
+        margin: 20px;
+        border-radius: 20px;
+        background-color: rgb(60, 60, 60);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #nike {
+        height: 300px;
+      }
+      .navigation {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        padding: 10px 10px 0px 10px;
+        justify-content: space-between;
+      }
+      #back-btn {
+        filter: invert(100%);
+        height: 40px;
+      }
+      #share-btn {
+        color: #fff;
+        background-color: #444444;
+        border: 1px solid #a3a3a3;
+        font-size: large;
+        border-radius: 25px;
+        padding: 0px 10px 0px;
+        transition: 0.2s ease-in-out;
+      }
+      #share-btn:hover {
+        background-color: #2b2b2b;
+      }
+      #share-btn:active {
+        background-color: black;
+      }
+      #cart-icon {
+        filter: invert(100%);
+        height: 25px;
+      }
+      #back-btn-1 {
+        background-color: #444444;
+        border: 1px solid #a3a3a3;
+        border-radius: 25px;
+        padding: 0px 10px 0px;
+        transition: 0.2s ease-in-out;
+      }
+      #back-btn-1:hover {
+        background-color: #2b2b2b;
+      }
+      #back-btn-1:active {
+        background-color: black;
+      }
+      h1 {
+        margin-left: 20px;
+        margin-bottom: 5px;
+        font-family: "Cormorant Garamond";
+        font-size: 35px;
+      }
+      h3 {
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-weight: lighter;
+      }
+      p {
+        margin: 20px;
+      }
+      .btn-container {
+        display: flex;
+        margin: 20px;
+        margin-top: 25px;
+        justify-content: space-between;
+      }
+      .btns {
+        background-color: #444444;
+        border: 2px solid #a3a3a3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        width: 170px;
+        height: 50px;
+        border-radius: 10px;
+        transition: 0.2s ease-in-out;
+      }
+      .btns:hover {
+        background-color: #2b2b2b;
+      }
+      .btns:active {
+        background-color: black;
+      }
+      #cart-btn {
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card-container">
+      <div class="navigation">
+        <button id="back-btn-1">
+          <img
+            src="https://i.ibb.co/dJHJYRxY/left-arrow.png"
+            alt="left-arrow"
+            border="0"
+            title="Back"
+            id="back-btn"
+          />
+        </button>
+        <button id="share-btn">Share</button>
+      </div>
+      <div class="img-container">
+        <img
+          src="https://i.ibb.co/S7vQ1fL0/pngwing-com.png"
+          alt="Nike Shoes"
+          border="0"
+          id="nike"
+        />
+      </div>
+      <h1>Nike Shoes</h1>
+      <h3>$599.99</h3>
+      <p>
+        Lightweight, responsive, and built for speed.
+        <br />Breathable mesh upper with plush cushioning for all-day comfort —
+        perfect for running or casual wear.
+      </p>
+      <div class="btn-container">
+        <button class="btns">Buy Now</button>
+        <button class="btns" id="cart-btn">
+          <img
+            src="https://i.ibb.co/j9xSLKHN/grocery-store.png"
+            border="0"
+            alt="cart"
+            id="cart-icon"
+          />Add to Cart
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -4,6 +4,9 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Borel", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   height: 100%;
 }
 

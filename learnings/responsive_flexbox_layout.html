@@ -1,0 +1,48 @@
+<!-- Create a Responsive Flexbox Layout
+Task: Create a simple responsive layout using Flexbox where three boxes are aligned horizontally, centered both vertically and horizontally within the container, and wrap to the next line on smaller screens.
+
+Instructions:
+
+Create a container div with the class name flex-container.
+
+Inside the container, create three div elements with the class name flex-item.
+
+Apply Flexbox properties to:
+
+Center the items horizontally and vertically.
+
+Ensure the items are spaced evenly within the container.
+
+Allow the items to wrap to the next line when the screen width is reduced.
+
+Style each flex-item with a fixed width and height, and give each one a red background color for distinction. Give a yellow color to the parent div for distinction. -->
+
+<html>
+<!--Add your HTML code here-->
+<head>
+    <style>
+        .flex-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            flex-wrap: wrap;
+        }
+        .flex-item{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item1</div>
+        <div class="flex-item">Item2</div>
+        <div class="flex-item">Item3</div>
+    </div>
+</body>
+
+</html>

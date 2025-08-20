@@ -1,0 +1,45 @@
+<!-- Create a 3x3 Grid Layout
+Task: Create a 3x3 grid layout where each cell contains a numbered box. The grid should be responsive, and the boxes should adjust their size based on the container's width.
+
+Instructions:
+
+Create a container div with the class name grid-container.
+
+Inside the container, create nine div elements with the class name grid-item.
+
+Use CSS Grid to arrange the grid-item elements into a 3x3 grid.
+
+Style each grid-item with a background color, padding, and centered text.
+
+Ensure the grid is responsive so that when the container's width decreases, the grid items maintain their aspect ratio. -->
+
+<html>
+  <!--Add your HTML code here-->
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+      }
+      .grid-item {
+        background-color: red;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item">8</div>
+      <div class="grid-item">9</div>
+    </div>
+  </body>
+</html>

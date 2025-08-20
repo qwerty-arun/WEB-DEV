@@ -1,0 +1,60 @@
+<!-- Positions In CSS
+Task: Create a layout where three elements are positioned using static, relative, and absolute positioning. Each element should be clearly distinguishable with different background colors.
+
+Instructions:
+
+1. Create a container div with the class name parent-container.
+
+2. Inside the container, create three div elements:
+
+    - The first element should have the class name static-box and be positioned normally in the document flow without any top/bottom/left/right.
+
+    - The second element should have the class name relative-box and be positioned 50px to the right and 50px down from its normal position.
+
+    - The third element should have the class name absolute-box and be positioned 30px from the top and 30px from the left of the container.
+
+3. Apply background colors to each element to make their positions clear. -->
+<html>
+    <head>
+        <style>
+            .parent-container {
+                position: relative;
+                width: 400px;
+                height: 400px;
+                background-color: yellow;
+            }
+ 
+            .static-box {
+                position: static;
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+ 
+            .relative-box {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                top: 50px;
+                left: 50px;
+            }
+ 
+            .absolute-box {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                top: 30px;
+                left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent-container">
+            <div class="static-box">Static</div>
+            <div class="relative-box">Relative</div>
+            <div class="absolute-box">Absolute</div>
+        </div>
+    </body>
+</html>

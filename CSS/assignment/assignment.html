@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #8a2be2, #4169e1);
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        margin: 20px;
+      }
+
+      #carouselExampleIndicators{
+        object-fit: cover;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .carousel .slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cards {
+        background-color: black ;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 40px;
+        padding: 20px;
+        border: 2px black solid;
+        border-radius: 15px;
+      }
+      .card{
+        margin: 10px;
+        background-color: #1a1a1a;
+        color: white;
+        width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Our Planet Earth!</h1>
+    <div style="max-width: 800px;" id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="earth-1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="earth-2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="earth-3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="earth-4.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="earth-5.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="cards">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">YT Card</h5>
+          <iframe
+            width="260"
+            height="175"
+            src="https://www.youtube.com/embed/XmtXC_n6X6Q?si=_bNYanILD4kueVSL"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h4>
+            Our Planet | From Deserts to Grasslands | FULL EPISODE | Netflix
+          </h4>
+          <a href="#" class="btn btn-primary">Watch Now</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">YT Card</h5>
+          <iframe
+            width="260"
+            height="175"
+            src="https://www.youtube.com/embed/EF8C4v7JIbA?si=ob-KZFWzeegpzZ5n"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h4>
+            Travel to the Depths of Our Mysterious Oceans | 4K UHD | Blue Planet
+            II | BBC Earth
+          </h4>
+          <a href="#" class="btn btn-primary">Watch Now</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">YT Card</h5>
+          <iframe
+            width="260"
+            height="175"
+            src="https://www.youtube.com/embed/bj2t7yGA_0M?si=06PNivVT05Yq0AlW"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h4>
+            A Journey Across Our Planet | 4K UHD | Planet Earth II | BBC Earth
+          </h4>
+          <a href="#" class="btn btn-primary">Watch Now</a>
+        </div>
+      </div>
+    </div>
+    <p>&copy; 2025 Arun K R</p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

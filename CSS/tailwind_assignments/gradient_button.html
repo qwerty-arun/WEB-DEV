@@ -1,0 +1,28 @@
+<!-- 
+Create a Gradient Colored Button Using Tailwind CSS
+Instructions:
+
+Create a button element in your HTML.
+
+Apply Tailwind CSS gradient utilities to create a gradient background for the button. It must go from bg-blue-500 to bg-pink-500 (left to right).
+
+Style the button with appropriate 8px vertical padding, 16px horizontal padding, white text color, and medium box shadow.
+
+Add hover effects to enhance the button’s appearance on mouseover. On hover, It must go from bg-pink-500 to bg-blue-500.
+
+Include the Tailwind CSS CDN link in the <head>:
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <button class="bg-gradient-to-r from-blue-500 to-pink-500 text-white py-2 px-4 shadow-md hover:from-pink-500 hover:to-blue-500">
+        Gradient Button
+    </button>
+</body>
+</html>

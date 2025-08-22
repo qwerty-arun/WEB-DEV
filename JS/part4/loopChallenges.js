@@ -5,8 +5,8 @@
 let sum = 0;
 let i = 1;
 while (i <= 5) {
- sum += i;
- i++;
+  sum += i;
+  i++;
 }
 // console.log(sum);
 
@@ -15,9 +15,9 @@ while (i <= 5) {
 */
 
 let j = 5;
-let countdown = []
-while(j>=1){
-    countdown.push(j);
-    j--;
+let countdown = [];
+while (j >= 1) {
+  countdown.push(j);
+  j--;
 }
 console.log(countdown);

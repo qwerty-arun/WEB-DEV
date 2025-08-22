@@ -1,0 +1,44 @@
+<!-- Create a Rotating Square Box Using Tailwind CSS
+Instructions:
+
+Create a div element to represent the square box.
+
+Apply Tailwind CSS utilities to make the div a square with defined dimensions and background color.
+
+Width and Height must be w-32 and h-32
+
+Must have blue-500 background
+
+Must have 16px border width
+
+Must have gray-800 border
+
+Apply tailwind class for the continuous rotation animation to the square box.
+
+Add some padding and border to the box for better visibility.
+
+Include the Tailwind CSS CDN link in the <head>:
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+
+<html>
+<!--Add your HTML code here-->
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    /* Custom animation */
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spin-slow 4s linear infinite;
+    }
+  </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="w-32 h-32 bg-blue-500 border-[16px] border-gray-800 p-4 animate-spin-slow">
+  </div>
+</body>
+</html>

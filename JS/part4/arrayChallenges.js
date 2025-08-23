@@ -20,6 +20,7 @@ const favoriteCity = cities[2];
    Change the second element of the array to `"jasmine tea"`.
 */
 let teaTypes = ["herbel tea", "white tea", "masala chai"];
+teaTypes[1] = "jasmine tea";
 
 /* 
 4. Declare an array named `citiesVisited` containing `"Mumbai"` and `"Sydney"`. 

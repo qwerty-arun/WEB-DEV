@@ -20,7 +20,11 @@ console.log(`tesla tyres`, tesla.tyres);
 console.log(`tesla `, Object.getPrototypeOf(tesla));
 
 //these are good checks
+
+// old way
 console.log(`tesla hasOwnProperty driver?`, tesla.hasOwnProperty("driver"));
 console.log(`tesla hasOwnProperty tyres?`, tesla.hasOwnProperty("tyres"));
+
+// modern way
 console.log(`tesla hasOwn driver?`, Object.hasOwn(tesla, "driver"));
 console.log(`tesla hasOwn tyres?`, Object.hasOwn(tesla, "tyres"));

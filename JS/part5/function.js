@@ -59,10 +59,10 @@ function makeTea(typeOfTea) {
 }
 
 function processTeaOrder(teaFn) {
-  return teaFn("earl grey");
+  return teaFn("earl grey"); //how will you know what to pass?
 }
 
-let order1 = processTeaOrder(makeTea);
+let order1 = processTeaOrder(makeTea); //function passed as parameter
 // console.log(order1);
 
 /*

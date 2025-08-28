@@ -40,6 +40,8 @@ let dog = new Animal("Dog");
 let cat = new Animal("Cat");
 // console.log(cat.sound());
 
+// target keyword allows you to determine if a function or class was called with the `new` keyword
+// Inside a constructor, new.target refers to the constructor that was directly invoked by `new`. If a function is called without `new`, `new.target` will be undefined
 function Drink(name) {
   if (!new.target) {
     throw new Error("Drink must be called with new keyword");

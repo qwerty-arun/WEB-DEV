@@ -24,10 +24,12 @@ function Animal(type) {
   this.type = type;
 }
 
+//Common methods
 Animal.prototype.speak = function () {
   return `${this.type} makes a sound`;
 };
 
+// Extend built-in prototypes
 Array.prototype.arun = function () {
   return `Custom method ${this}`;
 };

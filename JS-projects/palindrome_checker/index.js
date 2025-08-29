@@ -14,3 +14,21 @@ function check() {
   }
   input.value = "";
 }
+
+// Another method
+
+/*
+// Remember to change the class of button to "button"
+document.getElementById("button").addEventListener('click', function() {
+  const input = document.querySelector("input");
+  const value = input.value;
+  const reverse = value.split("").reverse().join("");
+
+  if (value === reverse)
+    alert("Palindrome");
+  else
+    alert("NAHHHHHH!");
+
+  input.value = "";
+});
+*/

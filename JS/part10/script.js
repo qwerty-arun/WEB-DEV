@@ -66,7 +66,26 @@ document
   .getElementById("feedbackForm")
   .addEventListener("submit", function (event) {
     event.preventDefault();
-    let feedback = document.getElementById("feedbackInput");
-    console.log(feedback);
-    // 19:24 done, but rewatch 8th example
+    //both label and input have the id: "feedbackInput"
+    // let feedback = document.getElementById("feedbackInput");
+    let feedback = document.getElementById("feedbackInput").value;
+    //But, how to access label?
+    document.getElementById("feedbackDisplay").textContent = `Feedback is: ${feedback}`
   });
+
+
+// Example 9
+
+document
+  .addEventListener('DOMContentLoaded', function(){
+    document.getElementById('domStatus').textContent = "DOM fully loaded"
+})
+
+// Example 10
+
+document
+  .getElementById("toggleHighlight")
+  .addEventListener("click", function(){
+    let descriptionText = document.getElementById("descriptionText")
+    descriptionText.classList.toggle("highlight")
+})

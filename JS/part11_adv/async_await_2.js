@@ -14,7 +14,7 @@ function fetchCommentData() {
   });
 }
 
-async function getBlogData(params) {
+async function getBlogData() {
   try {
     console.log("Fetching blog data");
 

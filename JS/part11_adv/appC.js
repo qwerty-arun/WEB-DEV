@@ -1,3 +1,3 @@
 const mathOperations = require("./mathOperationsC.js");
 
-log(mathOperations.add(2, 4));
+console.log(mathOperations.add(2, 4));

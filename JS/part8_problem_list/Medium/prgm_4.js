@@ -36,7 +36,7 @@ function groupBy(arr, key) {
     if (!result[value]) {
       result[value] = [];
     }
-    result[value].push(obj);
+    result[value].push(obj.name); // you can use 'obj' directly if you wan't to, here it just adds names
     return result;
   }, {});
 }

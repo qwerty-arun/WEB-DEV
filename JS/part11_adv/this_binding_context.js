@@ -11,7 +11,5 @@ const greetFn = person.greet;
 greetFn();
 
 // const boundGreet = person.greet.bind({ name: "John" });
-const boundGreet = person.greet.bind({name: `${person.name}`});
+const boundGreet = person.greet.bind({ name: `${person.name}` });
 boundGreet();
-
-// bind, call and apply

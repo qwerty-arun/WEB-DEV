@@ -166,3 +166,58 @@ class Employee {
 }
 let emp = new Employee("Bob", 50000);
 console.log(emp.salary);
+emp.salary = 2000;
+console.log(emp.salary);
+
+
+// Syntax in object literals
+const person = {
+  firstName: "Arun",
+  lastName: "KR",
+
+  // getter
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+
+  // setter
+  set fullName(name) {
+    const parts = name.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  }
+};
+
+console.log(person.fullName);   // Arun KR (getter called)
+person.fullName = "Hitesh Sharma"; // setter called
+console.log(person.firstName);  // Hitesh
+console.log(person.lastName);   // Sharma
+
+// Syntax in Classes
+class Rectangle {
+  constructor(width, height) {
+    this._width = width;
+    this._height = height;
+  }
+
+  // getter
+  get area() {
+    return this._width * this._height;
+  }
+
+  // setter
+  set width(value) {
+    if (value <= 0) {
+      console.log("Width must be positive!");
+      return;
+    }
+    this._width = value;
+  }
+}
+
+const rect = new Rectangle(10, 5);
+
+console.log(rect.area); // 50 (getter called)
+rect.width = -4;        // "Width must be positive!"
+rect.width = 20;        
+console.log(rect.area); // 100

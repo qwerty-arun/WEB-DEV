@@ -24,7 +24,12 @@ function reverseArray(arr) {
 function findMax(arr) {
   return Math.max(...arr);
 }
-
+/*
+Significance of ... (spread operator):
+- The spread operator expands an iterable (like an array or string) into individual elements.
+- In this case, ...arr takes all elements from the array arr and passes them as separate arguments to the Math.max() function.
+- Without the spread operator, passing the array directly like Math.max(arr) would not work, because Math.max expects a list of numbers, not an array.
+*/
 
 // Task 4: Remove Duplicates from an Array
 // Write a function removeDuplicates(arr) that returns a new array with all duplicates removed

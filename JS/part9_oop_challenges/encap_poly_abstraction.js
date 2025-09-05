@@ -62,12 +62,14 @@ class Shape{
 class Circle extends Shape{
    
     constructor(radius){
+        // Must call super constructor in the derived class before using the 'this' keyword or returning from derived constructor
         super();
         this.radius = radius;
     }
     area(){
         // return 3.14 * this.radius * this.radius;
         return parseFloat((Math.PI * this.radius * this.radius).toFixed(2));
+        // the above was done because of the online compiler used in the course, use the first one
     }
 }
 

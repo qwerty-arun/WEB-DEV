@@ -1,5 +1,5 @@
 # 🟢 Easy (Basics & Fundamentals)
-**Topics: Variables, Loops, Arrays, Strings, Functions**
+## **Topics: Variables, Loops, Arrays, Strings, Functions**
 
 1. Write a function to reverse a string.
 2. Find the largest number in an array.
